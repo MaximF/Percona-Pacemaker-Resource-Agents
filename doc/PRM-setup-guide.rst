@@ -54,7 +54,13 @@ Redhat/Centos 6
 ===============
 
 ::
-
+   
+   [root@host-01 ~] vim /etc/yum.repos.d/slinux.repo
+     [scientific-linux]
+     name=Scientific Linux
+     baseurl=http://ftp.scientificlinux.org/linux/scientific/6/x86_64/os/
+     enabled=0
+     gpgcheck = 0
    [root@host-01 ~]# yum install pacemaker corosync
 
 
